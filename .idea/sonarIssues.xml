@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/challenge/digitalfactory/basiccalculator/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Chrysler/UConnect/FCA Repo/R1-FCA-Off-Road-Pages-SR22/SourceCode/app/src/main/java/com/fca/uconnect/offroadpages/util/ProxyHelper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Chrysler/UConnect/FCA Repo/R1-Profile-Setup-Tutorial/ProfileTutorialSetup/app/version.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Chrysler/UConnect/FCA Repo/R1-STLA-Breadcrumbing/app/src/main/res/layout/notification_30_miles_limit.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Chrysler/UConnect/FCA Repo/R1-STLA-Off-Road-Pages-3.0/.gitignore">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Chrysler/UConnect/FCA Repo/R1-STLA-Off-Road-Pages-3.0/app/src/main/java/com/fca/uconnect/offroadpages/di/ResourceProvider.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Chrysler/UConnect/FCA Repo/R1-STLA-Off-Road-Pages-3.0/app/src/main/java/com/fca/uconnect/offroadpages/proxi/OrpProxiAccessLayer.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Chrysler/UConnect/FCA Repo/R1-STLA-Off-Road-Pages-3.0/app/src/main/java/com/fca/uconnect/offroadpages/proxi/OrpProxiEnum.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Chrysler/UConnect/FCA Repo/R1-STLA-Off-Road-Pages-3.0/app/src/main/java/com/fca/uconnect/offroadpages/proxi/OrpProxiExtension.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Chrysler/UConnect/FCA Repo/R1-STLA-Off-Road-Pages-3.0/app/src/main/java/com/fca/uconnect/offroadpages/proxi/OrpProxiInfo.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Chrysler/UConnect/FCA Repo/R1-STLA-Off-Road-Pages-3.0/app/src/main/java/com/fca/uconnect/offroadpages/proxi/OrpProxiTable.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Chrysler/UConnect/FCA Repo/R1-STLA-Off-Road-Pages-3.0/app/src/main/java/com/fca/uconnect/offroadpages/vehicle/OrpVehicleAccessLayer.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Chrysler/UConnect/FCA Repo/R1-STLA-Off-Road-Pages-3.0/app/src/main/java/com/fca/uconnect/offroadpages/view_model/toolbar/TCaseStatViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Chrysler/UConnect/FCA Repo/R1-STLA-Off-Road-Pages-3.0/app/src/main/java/com/fca/uconnect/offroadpages/view_model/vehicledynamics/SteeringWheelViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Chrysler/UConnect/FCA Repo/R1-STLA-Off-Road-Pages-3.0/app/src/main/res/layout/comp_vehicle_dynamics_ram.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
