@@ -9,7 +9,6 @@ import net.objecthunter.exp4j.ExpressionBuilder
 import java.text.DecimalFormat
 import kotlin.math.cos
 import kotlin.math.sin
-import kotlin.math.tan
 
 /**
  * This activity controls the operation of the basic calculator, so the functions are VERY basic but
