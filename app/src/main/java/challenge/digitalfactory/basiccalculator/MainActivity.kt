@@ -72,8 +72,8 @@ class MainActivity : AppCompatActivity() {
     fun onSinePressed(view: View){
         try {
             val value = textArea.text.toString()
-            val sine = sin(value.toDouble())
-            this.textArea.text = sine.toString()
+            val sine = decimalFormat.format(sin(Math.toRadians(value.toDouble())))
+            this.textArea.text = sine
             resultShown = true
         }
         catch(exception: Exception){
@@ -90,8 +90,8 @@ class MainActivity : AppCompatActivity() {
     fun onCosinePressed(view: View){
         try {
             val value = textArea.text.toString()
-            val cosine = cos(value.toDouble())
-            this.textArea.text = cosine.toString()
+            val cosine = decimalFormat.format(cos(Math.toRadians(value.toDouble())))
+            this.textArea.text = cosine
             resultShown = true
         }
         catch(exception: Exception){
@@ -108,8 +108,15 @@ class MainActivity : AppCompatActivity() {
     fun onTangentPressed(view: View){
         try {
             val value = textArea.text.toString()
-            val tangent = tan(value.toDouble())
-            this.textArea.text = tangent.toString()
+            val angle = Math.toRadians(value.toDouble())
+            var tangent = decimalFormat.format(sin(angle)).toDouble() / decimalFormat.format(cos(angle)).toDouble()
+
+            when(tangent.toString()){
+                "-0.0" -> this.textArea.text = "0"
+                "Infinity" -> this.textArea.text = "Error"
+                else -> this.textArea.text = decimalFormat.format(tangent)
+            }
+
             resultShown = true
         }
         catch(exception: Exception){
