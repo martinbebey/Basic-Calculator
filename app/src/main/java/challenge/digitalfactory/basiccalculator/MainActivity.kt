@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
+import java.text.DecimalFormat
 import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.tan
@@ -15,14 +16,16 @@ import kotlin.math.tan
  * still intuitive
  *
  * Some things to note are:
+ *
  * 1. The calculator is designed to handle any input from the buttons and display a result (no crash)
  * 2. If an input cannot be processed or is invalid, an error is shown
- * 3. If the initial operand is desired to be negative, then it needs to be subtracted from 0 first
- * 4. There is no decimal point input button but fractional results can be obtained and can be used in subsequent operations
  *
  * ~By MB
  */
 class MainActivity : AppCompatActivity() {
+
+    private var resultShown = false  //used to reset the display when a number is pressed after a result is displayed
+    private val decimalFormat = DecimalFormat("0.##########")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,9 +38,9 @@ class MainActivity : AppCompatActivity() {
     * @param view the view for the number being clicked
     */
     fun onNumberPressed(view:View) {
-        if(textArea.text.toString() == "0")
-        {
+        if(textArea.text.toString() == "0" || resultShown) {
             textArea.text = ""
+            resultShown = false
         }
 
         textArea.append((view as Button).text)
@@ -49,6 +52,7 @@ class MainActivity : AppCompatActivity() {
      * @param view the view for the operator being clicked
      */
     fun onOperatorPressed(view:View) {
+        resultShown = false
         textArea.append((view as Button).text)
     }
 
@@ -70,6 +74,7 @@ class MainActivity : AppCompatActivity() {
             val value = textArea.text.toString()
             val sine = sin(value.toDouble())
             this.textArea.text = sine.toString()
+            resultShown = true
         }
         catch(exception: Exception){
             exception.printStackTrace()
@@ -87,6 +92,7 @@ class MainActivity : AppCompatActivity() {
             val value = textArea.text.toString()
             val cosine = cos(value.toDouble())
             this.textArea.text = cosine.toString()
+            resultShown = true
         }
         catch(exception: Exception){
             exception.printStackTrace()
@@ -104,6 +110,7 @@ class MainActivity : AppCompatActivity() {
             val value = textArea.text.toString()
             val tangent = tan(value.toDouble())
             this.textArea.text = tangent.toString()
+            resultShown = true
         }
         catch(exception: Exception){
             exception.printStackTrace()
@@ -120,12 +127,15 @@ class MainActivity : AppCompatActivity() {
         try{
             val text = textArea.text.toString()
             val eval = ExpressionBuilder(text).build()
-            val result = eval.evaluate()
-            textArea.text = result.toString()
+            val result = decimalFormat.format(eval.evaluate())
+            textArea.text = result
         }
         catch(exception: Exception){
             exception.printStackTrace()
             textArea.text = "Error"
+        }
+        finally {
+            resultShown = true
         }
     }
 }
